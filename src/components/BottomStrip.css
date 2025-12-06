@@ -1,32 +1,31 @@
 .bottomstrip-wrapper {
-  width: 100%;
+
   padding: 22px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  /* GLASSMORPHISM */
+  /* GLASS BACKGROUND */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  background: rgba(224, 218, 254, 0.50);
+  background: rgba(224, 218, 254, 0.45);
 
-
+  position: fixed;
+  bottom: 0px; /* ALWAYS FIXED */
   left: 0;
   right: 0;
   margin: auto;
 
   z-index: 10;
-  opacity: 1;
-  transform: translateY(60px);
-  transition: all 0.45s ease;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-/* WHEN SCROLLED 100vh */
 .bottomstrip-wrapper.active {
-  opacity: 1;
-  transform: translateY(0px);
-  bottom: 20px;
+  opacity: 1; /* ONLY opacity changes */
 }
+
 
 /* PRICE LAYOUT */
 .bs-price-section {

@@ -1,4 +1,5 @@
 import React from "react";
+
 import TopTicker from "./components/ScrollingStrip";
 import Hero from "./components/Hero";
 
@@ -22,6 +23,10 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <TopTicker />
+
+
+
+
       <LogoStrip />
 
       <header className="relative">
@@ -29,6 +34,10 @@ export default function App() {
       </header>
 
       <TeamSection />
+
+
+
+
 
       <main className="space-y-24">
         <HeroSection />

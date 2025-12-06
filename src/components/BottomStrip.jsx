@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./BottomStrip.css";
 
 import CalendarIcon from "../assets/images/calendar.svg";
@@ -6,11 +6,23 @@ import VideoIcon from "../assets/images/vc_icon.svg";
 
 export default function BottomStrip() {
 
+  const [showStrip, setShowStrip] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 350) {
+        setShowStrip(true);
+      } else {
+        setShowStrip(false);
+      }
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className={`bottomstrip-wrapper`}>
+    <div className={`bottomstrip-wrapper ${showStrip ? "active" : ""}`}>
       
       {/* PRICE */}
       <div className="bs-price-section">
@@ -24,7 +36,7 @@ export default function BottomStrip() {
       {/* FEATURES */}
       <div className="bs-features">
         <div className="bs-feature">
-          <img src={CalendarIcon} className="bs-icon"  alt="calendar-icon"/>
+          <img src={CalendarIcon} className="bs-icon" alt="calendar-icon" />
           <div>
             <h4>Daily Batches</h4>
             <p>Morning • Afternoon • Evening</p>

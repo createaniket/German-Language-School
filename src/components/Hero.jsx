@@ -7,26 +7,26 @@ import Calendar from "../assets/images/calendar.svg";
 
 export default function Hero() {
   return (
-    <section className="bg-[#FDFEF8]">
+    <section className="hero-top-sect">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         <h1 className="hero-top-head text-center leading-tight">
           <span className="block">German Language Learning</span>
-          <span className="block text-[color:var(--primary-500)]">
+          <span className="block main-color-sit">
             Webinar For Beginners To Advanced
           </span>
           <span className="block-hro-lvl-blk">Levels</span>
         </h1>
 
         <p className="hero-top-txt">
-Get clarity on where to start, how to progress from A1 to B2, and how to prepare smartly for exams. 
-All in one powerful thirty-minute ₹99 session.        </p>
+          Get clarity on where to start, how to progress from A1 to B2, and how to prepare smartly for exams.
+          All in one powerful thirty-minute ₹99 session.        </p>
 
         <div className="webinar-section-top">
-          
+
           <div className="info-box">
             <p>
-If you want to learn German the right way, avoid beginner mistakes, and follow a proper learning roadmap, this webinar is made for you.            </p>
+              If you want to learn German the right way, avoid beginner mistakes, and follow a proper learning roadmap, this webinar is made for you.            </p>
           </div>
 
           <div className="right-content">
