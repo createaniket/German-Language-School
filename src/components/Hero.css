@@ -1,0 +1,133 @@
+.hero-top-head {
+    color: #242325;
+    text-align: center;
+
+    /* H1 / Bold */
+    font-family: "Raveo";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    /* 125% */
+
+}
+
+.block {
+    display: inline-block;
+}
+
+.block-hro-lvl-blk {
+
+    display: inline-block;
+    margin: 00 10px;
+}
+
+
+.hero-top-txt {
+
+    color: #47464A;
+    text-align: center;
+
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    width: 80%;
+    margin: 20px auto;
+    /* 150% */
+}
+
+
+
+.webinar-section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT BOX */
+.info-box {
+  background: #eaf1ff;
+  padding: 30px;
+  border-radius: 12px;
+  border-bottom: 4px solid #6c63ff;
+  max-width: 450px;
+}
+
+.info-box p {
+  color: #3b3bb3;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* RIGHT CONTENT */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* FEATURE ITEMS */
+.features {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.feature-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+
+.feature-item span {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  background: #6350ff;
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s ease;
+}
+
+.cta-btn .strike {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+.cta-btn:hover {
+  background: #5440e6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .webinar-section-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

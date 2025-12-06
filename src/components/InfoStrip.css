@@ -1,0 +1,45 @@
+.info-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 40px 0;
+  width: 75%;
+
+  margin: 00 auto;
+}
+
+.left-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  max-width: 30%;
+}
+
+.mid-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #4f38c8;
+  line-height: 1.6;
+  max-width: 30%;
+}
+
+.cta-btn {
+  background: #5a4ff3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}

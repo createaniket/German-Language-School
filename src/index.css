@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Raveo";
+  src: url("./assets/fonts/RaveoVF-subsetted.woff2") format("woff2"),
+       url("./assets/fonts/RaveoVF.woff2") format("woff2"),
+       url("./assets/fonts/RaveoVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+/* Design tokens from your Figma extract */
+:root{
+  --neutral-primary: #242325;
+  --grey-800: #47464A;
+  --grey-700: #6B6A70;
+  --grey-600: #8E8D95;
+  --primary-600: #4F38C8;
+  --primary-500: #6346FA;
+  --primary-400: #826BFB;
+  --primary-300: #A190FC;
+  --primary-900: #140E32;
+  --blue-800: #304B64;
+  --blue-100: #E4F1FE;
+  --indigo-700: #4C147F;
+  --green-100: #DBF5E9;
+
+  --font-raveo: "Raveo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* small global helpers and animation */
+html,body,#root{height:100%}
+body{font-family:var(--font-raveo);background:#FDFEF8;color:var(--neutral-primary);}
+
+/* typography utilities layer for repeated Figma text tokens */
+@layer utilities {
+  .r-h1 { font-size:40px; line-height:50px; font-weight:600; color:var(--neutral-primary); }
+  .r-h2-primary { font-size:40px; line-height:50px; font-weight:600; color:var(--primary-500); }
+  .r-hero { font-size:48px; line-height:60px; font-weight:600; }
+  .r-body-lg { font-size:18px; line-height:27px; font-weight:400; color:var(--grey-800); }
+  .r-body-strong { font-size:18px; line-height:27px; font-weight:600; color:var(--grey-800); }
+  .r-small-blue { font-size:14px; line-height:21px; font-weight:600; color:var(--blue-800); }
+  .r-btn { font-size:20px; line-height:30px; font-weight:600; color:white; }
+  .r-price { font-size:48px; line-height:60px; font-weight:600; color:#022850; }
+}
+
+/* marquee-like ticker animation for top bar */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-scroll { animation: scroll-left 18s linear infinite; white-space:nowrap; }
+
+
+
+body{
+
+  margin: 0;
 }

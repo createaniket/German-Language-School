@@ -1,0 +1,158 @@
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-desc {
+  color: #555;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.hero-lists {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-lists ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-lists li {
+  font-size: 16px;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.hero-lists li::before {
+  content: "•";
+  color: #6c63ff;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+/* IMAGE SECTION */
+.hero-image-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.floating-box {
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+  background: #eaf3ff;
+  padding: 10px;
+  /* border-radius: 28px; */
+  font-size: 22px;
+  line-height: 1.4;
+  max-width: 800px;
+  color: #4a3aff;
+  font-weight: 600;
+  z-index: 5;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+  overflow: visible;
+  width: 31vw;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+/* PERFECT curved underline */
+.floating-box::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 10px;      /* thicker line */
+  
+  background: linear-gradient(
+    to right,
+    #7b4dff,
+    #5676ff
+  );
+
+  border-radius: 0 0 28px 28px;  /* curve matches your screenshot */
+
+  z-index: -1;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-lists {
+    flex-direction: column;
+  }
+}
+
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 32px;   /* space for icon */
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f4055;
+  line-height: 21px;
+  margin-bottom: 28px;
+}
+
+/* Single bullet icon */
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e5deff;       /* outer circle */
+
+  /* inner dot using inset box-shadow */
+  box-shadow: inset 0 0 0 6px #7a5cff;
+}

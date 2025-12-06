@@ -1,0 +1,105 @@
+.bottomstrip-wrapper {
+  width: 100%;
+  padding: 22px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* GLASSMORPHISM */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(224, 218, 254, 0.50);
+
+
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  z-index: 10;
+  opacity: 1;
+  transform: translateY(60px);
+  transition: all 0.45s ease;
+}
+
+/* WHEN SCROLLED 100vh */
+.bottomstrip-wrapper.active {
+  opacity: 1;
+  transform: translateY(0px);
+  bottom: 20px;
+}
+
+/* PRICE LAYOUT */
+.bs-price-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.bs-price-big {
+  font-size: 70px;
+  font-weight: 800;
+  color: #0c2340;
+  line-height: 1;
+}
+
+.bs-price-right {
+  margin-top: 8px;
+}
+
+.bs-old-price {
+  font-size: 28px;
+  color: #64748B;
+  text-decoration: line-through;
+}
+
+.bs-discount {
+  font-size: 28px;
+  color: #3D4F63;
+  margin-top: -6px;
+}
+
+/* FEATURES */
+.bs-features {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.bs-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bs-icon {
+  width: 34px;
+}
+
+/* CTA BUTTON */
+.bs-cta {
+  position: relative;
+}
+
+.bs-btn {
+  background: #5E3BEE;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.bs-badge {
+  position: absolute;
+  top: -12px;
+  right: 18px;
+  background: white;
+  color: #5E3BEE;
+  padding: 4px 12px;
+  font-size: 13px;
+  border-radius: 14px;
+  font-weight: 600;
+}

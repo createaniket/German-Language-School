@@ -1,0 +1,26 @@
+.logo-strip {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;        /* space between logos and X */
+  padding: 40px 0;
+}
+
+.logo-img {
+  height: 120px;    /* adjust to your design */
+  object-fit: contain;
+}
+
+.cross-icon {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+}
+
+/* If using TEXT X instead of SVG */
+.cross-text {
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+}

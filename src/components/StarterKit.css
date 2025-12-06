@@ -1,0 +1,101 @@
+.starter-wrapper {
+  max-width: 1050px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.starter-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #1A1A1A;
+}
+
+.purple-text {
+  color: #6938EF;
+}
+
+.sub-head {
+  margin-top: 16px;
+  color: #6B7280;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  
+}
+
+.starter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.starter-card {
+  background: #F7F9FF;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: left;
+  border-bottom: 4px solid #7C3AED;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.starter-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #1A1A1A;
+}
+
+.desc {
+  margin-top: 6px;
+  color: #6B7280;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #6938EF;
+  text-align: center;
+}
+
+/* TOTAL BOX INSIDE GRID (Right Column Last Row) */
+.starter-total-box {
+  background: #8B5CF6;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.starter-total-box h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.starter-total-box p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .starter-grid {
+    grid-template-columns: 1fr;
+  }
+}
