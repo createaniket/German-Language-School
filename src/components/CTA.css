@@ -30,19 +30,6 @@
   line-height: 1.6;
 }
 
-/* .cta-highlight-box {
-  margin: 40px auto;
-  background: #e9f1ff;
-  padding: 18px 24px;
-  width: fit-content;
-  border-radius: 16px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #6346FA;
-  border: 2px solid #d4e2ff;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
-} */
 
 .cta-highlight-box {
   margin: 40px auto;
@@ -88,3 +75,19 @@
 
 
 
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+
+
+  .cta-highlight-box{
+
+    font-size: 14px;
+    margin: 10px auto;
+  }
+
+  .cta-join-btn{
+
+        font-size: 14px;
+    margin: 10px auto;
+  }
+}
