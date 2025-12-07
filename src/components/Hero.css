@@ -55,16 +55,21 @@
 .info-box {
   background: #eaf1ff;
   padding: 30px;
-  border-radius: 12px;
-  border-bottom: 4px solid #6c63ff;
+  border-radius: 16px;
   max-width: 450px;
+
+  /* 🔥 Perfect bottom curved purple shadow */
+  box-shadow: inset 0px -4px 0px rgba(98, 73, 255, 0.6);
 }
 
+
 .info-box p {
-  color: #3b3bb3;
+  color: #4F38C8;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
+  font-weight: 600;
   margin: 0;
+      padding: 00 40px;
 }
 
 /* RIGHT CONTENT */
@@ -89,11 +94,15 @@
 .feature-item h4 {
   margin: 0;
   font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
   color: #1e1e1e;
 }
 
 .feature-item span {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
   color: #5a5a5a;
 }
 
@@ -110,6 +119,8 @@
   border: none;
   border-radius: 40px;
   font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
   cursor: pointer;
   width: fit-content;
   transition: 0.2s ease;

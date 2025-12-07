@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h1 className="hero-top-head text-center leading-tight">
-            <span className="block">German Language Learning</span>
+            <span className="block">German Language Learning</span> <br/>
             <span className="block main-color-sit">
               Webinar For Beginners To Advanced
             </span>
