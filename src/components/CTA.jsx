@@ -20,7 +20,9 @@ export default function CTA() {
           This is the smartest ₹99 you will spend before starting your German journey.
         </div>
 
-        <button className="cta-join-btn">
+
+
+        <button className="cta-join-btn"   onClick={() => window.location.href = "https://rzp.io/rzp/M6tgETL"}>
           Join The ₹99 Webinar Now
         </button>
 

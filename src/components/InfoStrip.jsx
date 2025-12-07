@@ -15,7 +15,7 @@ export default function InfoStrip() {
         your goals. It is not the main purpose of the webinar.
       </div>
 
-      <button className="cta-btn">Book your seat now</button>
+      <button className="cta-btn"    onClick={() => window.location.href = "https://rzp.io/rzp/M6tgETL"}  >Book your seat now</button>
     </div>
   );
 }

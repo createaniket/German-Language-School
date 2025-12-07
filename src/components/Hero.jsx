@@ -65,12 +65,12 @@ export default function Hero() {
                 Join the Webinar @ ₹99 <span className="strike">₹999</span>
               </button> */}
 
-              <button 
-  className="cta-btn"
-  onClick={() => window.location.href = "https://rzp.io/rzp/M6tgETL"}
->
-  Join the Webinar @ ₹99 <span className="strike">₹999</span>
-</button>
+              <button
+                className="cta-btn"
+                onClick={() => window.location.href = "https://rzp.io/rzp/M6tgETL"}
+              >
+                Join the Webinar @ ₹99 <span className="strike">₹999</span>
+              </button>
 
 
             </div>
