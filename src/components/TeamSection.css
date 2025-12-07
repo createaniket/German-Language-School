@@ -1,36 +1,42 @@
-/* GRID */
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+.team-slider {
+  width: 100%;
   padding: 40px 0;
+  overflow: hidden;
 }
 
-/* CARD WRAPPER */
+/* .team-slide {
+  padding: 0 10px;
+}
+  */
+
+
 .team-card {
-  width: 16vw;
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
-/* TOP CONTAINER — FIXED HEIGHT */
 .team-card-top {
   height: 260px;
   border-radius: 32px 32px 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  overflow: hidden; /* prevents overflow */
+  overflow: hidden;
 }
 
-/* IMAGE — FIT PERFECTLY WITHOUT DISTORTION */
 .team-photo {
-  height: 240px;        /* consistent height */
-  width: 100%;          /* ensures landscape images fit */
-  object-fit: contain;  /* keeps proportions correct */
-  object-position: bottom; 
+  height: 240px;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
 }
 
-/* WHITE BOTTOM */
+.fix-mokshika {
+  height: 280px !important;
+  margin-bottom: -20px !important;
+}
+
 .team-card-bottom {
   background: #fff;
   border: 2px solid;
@@ -46,19 +52,7 @@
   font-weight: 600;
 }
 
-/* FIX ONLY LAST IMAGE (MOKSHIKA) */
-.fix-mokshika {
-  height: 280px !important;   /* make her a bit taller */
-  margin-bottom: -20px !important; /* pull image upward */
-  object-position: bottom center !important;
-}
-
-
-/* 🌟 Tablet (≤ 900px) */
 @media (max-width: 900px) {
-  .team-card {
-    width: 28vw;
-  }
   .team-card-top {
     height: 220px;
   }
@@ -67,11 +61,7 @@
   }
 }
 
-/* 🌟 Mobile (≤ 600px) */
 @media (max-width: 600px) {
-  .team-card {
-    width: 42vw;
-  }
   .team-card-top {
     height: 200px;
   }
