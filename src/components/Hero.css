@@ -50,7 +50,6 @@
   justify-content: space-between;
   padding: 40px 20px;
   gap: 2.5rem;
-  flex-wrap: wrap;
 }
 
 .info-box {
@@ -58,6 +57,7 @@
   padding: 30px;
   border-radius: 16px;
   max-width: 450px;
+  height: 95px;
 
   /* 🔥 Perfect bottom curved purple shadow */
   box-shadow: inset 0px -4px 0px rgba(98, 73, 255, 0.6);
@@ -83,7 +83,6 @@
 .features {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .feature-item {
@@ -220,8 +219,20 @@
 
 
   .webinar-section-top{
-
     padding: 20px 10px;
+  }
+
+  .info-box p{
+    padding: 0;
+  }
+
+  .info-box{
+    padding: 16px 24px;
+    text-align: center;
+  }
+
+  .hero-top-sect{
+    width: 372px;
   }
 }
 
