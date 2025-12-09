@@ -248,3 +248,9 @@ bottom: 20px;
     height: 8px;
   }
 }
+
+@media (min-width: 1440px) {
+  .hero-wrapper{
+    gap: 4rem;
+  }
+}

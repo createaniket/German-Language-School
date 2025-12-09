@@ -5,12 +5,12 @@ import "./TeamSection.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from "../assets/images/arun.png";
-import img2 from "../assets/images/kashish.png";
-import img3 from "../assets/images/riya.png";
-import img4 from "../assets/images/tanya.png";
-import img5 from "../assets/images/nidhi.png";
-import img6 from "../assets/images/monshika.png";
+import img1 from "../assets/images/Aruneshwar.svg";
+import img2 from "../assets/images/Kashish.svg";
+import img3 from "../assets/images/Riya.svg";
+import img4 from "../assets/images/Tanya.svg";
+import img5 from "../assets/images/Nidhi.svg";
+import img6 from "../assets/images/Mokshika.svg";
 
 const colors = ["#FFECEC", "#D9C7FF", "#FFECEC", "#D9C7FF", "#FFECEC", "#D9C7FF"];
 

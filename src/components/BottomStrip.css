@@ -251,3 +251,24 @@
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+
+
+@media (min-width: 1440px) {
+  .bottomstrip-wrapper {
+    padding: 24px 144px;
+  }
+
+  .bs-price-section{
+    align-items: center;
+  }
+
+  .bs-price-big{
+    font-size: 48px;
+  }
+
+  .bs-old-price, .bs-discount{
+    font-size: 18px;
+  }
+
+
+}
