@@ -1,13 +1,10 @@
 .team-slider {
   width: 100%;
   padding: 40px 0;
-  overflow: hidden;
+ 
 }
 
-/* .team-slide {
-  padding: 0 10px;
-}
-  */
+
 
 
 .team-card {
@@ -55,6 +52,7 @@
 @media (max-width: 900px) {
   .team-card-top {
     height: 220px;
+    
   }
   .team-photo {
     height: 200px;
@@ -70,5 +68,39 @@
   }
   .team-name {
     font-size: 1rem;
+  }
+}
+
+
+
+/* bharti */
+
+ .embla {
+  width: 100%;
+  overflow: hidden;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 20%;
+  padding: 0px;
+}
+
+@media (max-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 100%;
   }
 }

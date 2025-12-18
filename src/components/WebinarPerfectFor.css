@@ -39,13 +39,11 @@ width: 75vw;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: 0.2s ease;
-  text-align: center;           /* ← center-align everything inside */
+  text-align: left;           /* ← center-align everything inside */
 }
 
 .grid-card img {
   display: block;               /* ← remove inline gap */
-  margin: 0 auto 12px auto;     /* ← centers the icon horizontally */
-
   height: auto;
 }
 
@@ -70,6 +68,14 @@ width: 75vw;
 /* Responsive (optional) – on mobile make 2 columns */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
+
+  .content-wrapper {
+width: 90vw;
+  margin: 0 auto;
 }
+}
+
+
