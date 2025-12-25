@@ -10,7 +10,7 @@ import img2 from "../assets/images/kashish.png";
 import img3 from "../assets/images/riya.png";
 import img4 from "../assets/images/tanya.png";
 import img5 from "../assets/images/nidhi.png";
-import img6 from "../assets/images/monshika.png";
+import img6 from "../assets/images/mokshika.png";
 
 const colors = ["#FFECEC", "#D9C7FF", "#FFECEC", "#D9C7FF", "#FFECEC", "#D9C7FF"];
 

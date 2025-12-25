@@ -69,6 +69,11 @@
   .team-name {
     font-size: 1rem;
   }
+
+  .fix-mokshika {
+  height: 220px !important;
+}
+
 }
 
 

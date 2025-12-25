@@ -40,9 +40,10 @@
   font-weight: 600;
   color: #6346FA;
   line-height: 21px;
+   box-shadow: inset 0px -4px 0px rgba(98, 73, 255, 0.6);
 
   /* 🔥 Perfect bottom curved purple shadow */
-  box-shadow: inset 0px -8px 0px 0px rgba(98, 73, 255, 0.6);
+  /* box-shadow: inset 0px -8px 0px 0px rgba(98, 73, 255, 0.6); */
 }
 
 
@@ -89,5 +90,12 @@
 
         font-size: 14px;
     margin: 10px auto;
+  }
+
+  .cta-title{
+
+        font-size: 28px;
+    line-height: 36px;
+    
   }
 }
